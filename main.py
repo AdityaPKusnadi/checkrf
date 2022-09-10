@@ -17,7 +17,7 @@ import sys
 def process(website):
     options = Options()
     options.headless = True
-    driver = webdriver.Firefox(options=options,executable_path=GeckoDriverManager().install())
+    driver = webdriver.Firefox(options=options,executable_path='geckodriver')
     driver.implicitly_wait(10)
     wait = WebDriverWait(driver, 10)
     try:
