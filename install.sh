@@ -1,0 +1,1 @@
+sudo apt-get install python3 && sudo apt-get install python3-pip && pip3 install requests && pip3 install pip install webdriver-manager && sudo apt-get install firefox && pip3 install selenium
