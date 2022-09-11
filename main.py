@@ -42,6 +42,8 @@ def process(website):
             first_result = wait.until( presence_of_element_located((By.XPATH, "/html/body/app/site-layout/mat-sidenav-container/mat-sidenav-content/safe-browsing-report/ng-component/site-status-result/report-section/section/div/data-tile/div[2]/span")) )
             fix_result = first_result.get_attribute('textContent')
             driver.delete_all_cookies()
+            driver.close()
+            driver.quit()
             return(fix_result)
         except:
                 driver.close()
