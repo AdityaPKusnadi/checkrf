@@ -44,9 +44,11 @@ def process(website):
             driver.delete_all_cookies()
             return(fix_result)
         except:
+                driver.close()
                 driver.quit()
                 return ('RF')
     except:
+        driver.close()
         driver.quit()
 
 while(True):
