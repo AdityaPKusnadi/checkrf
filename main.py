@@ -90,5 +90,5 @@ while(True):
             loop += 1
 
         print('done')
-        sleep(60)
-    sleep(60)
+    #     sleep(60)
+    # sleep(60)
