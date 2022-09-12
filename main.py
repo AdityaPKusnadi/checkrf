@@ -72,7 +72,7 @@ while(True):
                 print("AMAN")
                 pass
             # jika mokad
-            elif result == 'This site is unsafe' or 'Some pages on this site are unsafe':
+            elif result == 'This site is unsafe':
                 # print("RF")
                 text = f"RF {line}"
                 TOKEN = "1448616115:AAF4nYNFAf6Gib_fJtEXLKcHCQvEYwP37kY"
@@ -83,6 +83,14 @@ while(True):
                 pass
             elif result == 'No available data':
                 print("KOSONG {line}")
+                pass
+            elif result == 'Some pages on this site are unsafe':
+                text = f"RF {line}"
+                TOKEN = "1448616115:AAF4nYNFAf6Gib_fJtEXLKcHCQvEYwP37kY"
+                chat_id = "-1001568937743"
+                url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={text}"
+                # print(url)
+                r = requests.get(url)
                 pass
             else :
                 print(result)
